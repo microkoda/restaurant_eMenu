@@ -2,7 +2,7 @@ from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, Float, Date
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql.functions import now
 
-from .database import Base
+from database import Base
 
 
 class Menu(Base):

@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Depends, status, Response, HTTPException
 from sqlalchemy import exc
-from . import models, schemas, database
+import models, schemas, database
 from sqlalchemy.orm import Session
 from typing import List
 import sqlalchemy
-from .database import SessionLocal, engine
+from database import SessionLocal, engine
 from datetime import datetime
 
 
